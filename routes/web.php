@@ -6,10 +6,7 @@ use App\Http\Controllers\User\AuthController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Home');
-});
-
+Route::get('/', [AuthController::class, 'viewLogin'])->name('view.login');
 Route::get('/login', [AuthController::class, 'viewLogin'])->name('view.login');
 Route::post('/login', [AuthController::class, 'login'])->name('post.login');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
