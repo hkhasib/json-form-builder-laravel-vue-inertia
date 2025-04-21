@@ -16,6 +16,7 @@ export default {
         viewForm(formId: number) {
             window.location.href = `/form/show/${formId}`;
         },
+        //To paginate
         goToPage(url: string) {
             if (url) {
                 router.visit(url, {

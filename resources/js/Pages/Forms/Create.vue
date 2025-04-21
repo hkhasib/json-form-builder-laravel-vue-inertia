@@ -33,6 +33,7 @@
             </div>
         </form>
 
+        // the form preview field is initially hidden
         <div v-if="isFormVisible">
             <h2>{{ form.title }}</h2>
 
@@ -133,12 +134,14 @@ export default {
         }
     },
     methods: {
+        // Handle file upload
         handleFileUpload(event) {
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
                 reader.onload = () => {
                     try {
+                        // Parse the JSON content and set it in the editor
                         const jsonContent = JSON.parse(reader.result);
                         this.editor.set(jsonContent);
                         this.formError = false;
@@ -175,6 +178,7 @@ export default {
                 this.validationErrors = [];
             }
         },
+        // Initialize form data based on the fields
         initializeFormData() {
             this.formData = {};
             this.form.fields.forEach((field) => {

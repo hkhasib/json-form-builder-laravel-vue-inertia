@@ -104,6 +104,8 @@
 <script lang="ts">
 import { router } from "@inertiajs/vue3";
 import DashboardLayout from "@/Layouts/DashboardLayout.vue";
+
+//for drag and drop
 import draggable from 'vuedraggable';
 import EditFieldSettings from "@/Components/EditFieldSettings.vue";
 import swal from 'sweetalert';
@@ -125,6 +127,7 @@ export default {
                 title: this.form.title,
                 action: this.form.action,
                 method: this.form.method,
+                // Sort fields by position
                 fields: [...this.form.fields].sort((a, b) => a.position - b.position),
                 status: this.form.status || 'draft',
             },
@@ -176,6 +179,8 @@ export default {
             }
             this.selectedField = null;
         },
+
+        //updating to the db
         saveEntireForm() {
             this.updatePositions();
             router.put(`/form/${this.id}`, {
