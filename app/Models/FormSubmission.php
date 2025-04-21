@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class FormSubmission extends Model
+{
+    protected $fillable = [
+        'form_id',
+        'submitted_at',
+    ];
+
+    protected $casts = [
+        'submitted_at' => 'datetime',
+    ];
+
+}
