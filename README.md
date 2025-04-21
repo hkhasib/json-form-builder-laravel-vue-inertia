@@ -121,3 +121,11 @@ Password: password
 
 ## 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## 📸 Screenshots
+Here’s a preview of the app:
+
+![Form Editor Screenshot](https://imgur.com/rfESeiY)
+![JSON Editor Screenshot](https://imgur.com/URCACQJ)
+![Form List Screenshot](https://imgur.com/atzcUoP)
+![Form Preview Screenshot](https://imgur.com/NNDImz5)
