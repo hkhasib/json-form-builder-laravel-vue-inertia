@@ -125,7 +125,7 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ## 📸 Screenshots
 Here’s a preview of the app:
 
-![Form Editor Screenshot](https://imgur.com/rfESeiY)
-![JSON Editor Screenshot](https://imgur.com/URCACQJ)
-![Form List Screenshot](https://imgur.com/atzcUoP)
-![Form Preview Screenshot](https://imgur.com/NNDImz5)
+![Form Editor Screenshot](https://imgur.com/rfESeiY.png)
+![JSON Editor Screenshot](https://imgur.com/URCACQJ.png)
+![Form List Screenshot](https://imgur.com/atzcUoP.png)
+![Form Preview Screenshot](https://imgur.com/NNDImz5.png)
